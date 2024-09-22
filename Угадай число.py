@@ -5,8 +5,8 @@ answer = 0
 startScore = 100
 countInput = 0
 
-while mainLoop  # ошибка 1
-    digit = random.randint(10, 50   # ошибка 2
+while mainLoop:  # ошибка 1
+    digit = random.randint(10, 50)   # ошибка 2
     print(digit)
     startScore = 100
     countInput = 0
@@ -35,6 +35,7 @@ while mainLoop  # ошибка 1
                 print('Вы ошиблись. Угадывайте дальше!')
                 startScore -= 10
                 print(f'У вас осталось {startScore} очков')
+            
 
 
     if (input('\nEnter - сыграть еще раз, 0 - выход ') == '0'):
